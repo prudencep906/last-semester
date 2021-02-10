@@ -10,7 +10,7 @@ public class Driver {
 	public static void main(String[] args) 
 	{
 		CombinationSum Combination = new CombinationSum();
-		int arr[] = {1, 0, 8, 4, 7, 6, 9, 21, 3};
+		int arr[] = {0, 0, 8, 4, 7, 6, 9, 21, 3};
 	    int n = arr.length;
 	    int sum = 1;
 	    
