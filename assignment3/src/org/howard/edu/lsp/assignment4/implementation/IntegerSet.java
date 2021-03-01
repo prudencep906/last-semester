@@ -1,6 +1,5 @@
 package org.howard.edu.lsp.assignment4.implementation;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class IntegerSet {
@@ -14,7 +13,7 @@ public class IntegerSet {
 	 */
 	public void clear()
 	{
-			set.clear();
+		set.clear();
 	};
 
 	
@@ -173,6 +172,7 @@ public class IntegerSet {
 		}
 		set.clear();
 		set = result;
+		
 	};
 
 	
@@ -200,7 +200,7 @@ public class IntegerSet {
 	 * @return true if the set is empty, false otherwise
 	 * 
 	 */
-	boolean isEmpty()
+	public boolean isEmpty()
 	{
 		return set.isEmpty();
 	}; 
