@@ -49,13 +49,13 @@ public class Driver {
         System.out.println("The size of the set A is: " + sizeOfA); 
         System.out.println("The size of the set B is: " + sizeOfB); 
         
-//        System.out.println(newLine);
-//        
-//        setA.remove(5);
-//        
-//        System.out.println("Set after removing 5: "); 
-//        setA.print();
-//        
+        System.out.println(newLine);
+        
+        // Remove 13 from set B and print out the resulting set
+        setB.remove(13);
+        System.out.println("Set B after removing 13: "); 
+        setB.print();
+       
 //        System.out.println(newLine);        
         
 
