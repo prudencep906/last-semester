@@ -1,7 +1,11 @@
 package org.howard.edu.lsp.assignment4.implementation;
 import java.util.ArrayList;
 
-
+/**
+ * 
+ * @author temip
+ *
+ */
 public class IntegerSet {
 	
 	private ArrayList<Integer> set = new ArrayList<Integer>();
@@ -9,7 +13,6 @@ public class IntegerSet {
 	
 	/**
 	 * Clears the internal representation of the set
-	 * 
 	 */
 	public void clear()
 	{
@@ -18,8 +21,8 @@ public class IntegerSet {
 
 	
 	/**
-	 * 
-	 * @return len: the length of the set
+	 * Return the length of the set
+	 * @return len
 	 */
 	public int length() 
 	{
@@ -30,10 +33,9 @@ public class IntegerSet {
 	
 	
 	/**
-	 * 
-	 * @param value
+	 * Method returns true if the set contains the value, otherwise false
+	 * @param value Item being checked for in the set
 	 * @return true if the set contains the value, otherwise false
-	 * 
 	 */
 	public boolean contains(int value)
 	{
@@ -42,10 +44,8 @@ public class IntegerSet {
 
 	
 	/**
-	 * 
-	 * @param item
 	 * Adds an item to the set or does nothing it already there
-	 * 
+	 * @param item Value being added to the set
 	 */
  	public void add(int item)
  	{
@@ -56,10 +56,8 @@ public class IntegerSet {
  	
  	
  	/**
- 	 * 
- 	 * @param item
  	 * Removes an item from the set or does nothing if not there
- 	 * 
+ 	 * @param item Value being removed from the set
  	 */
  	public void remove(int item)
  	{
@@ -69,8 +67,8 @@ public class IntegerSet {
 
  	
 	/**
-	 * 
-	 * @param b
+	 * Returns true if set A is equal to set B
+	 * @param b Set being compared to current set
 	 * @return true if set A is equal to set B
 	 */
 	public boolean equals(IntegerSet b)
@@ -93,11 +91,10 @@ public class IntegerSet {
 
  	
  	/**
- 	 * 
- 	 * @return max: largest item in the set
- 	 * @throws IntegerSetException: Throws IntegerSetException if the set is empty
- 	 * 
- 	 */
+ 	 * Return the largest item in the set
+ 	 * @return max largest item in the set
+ 	 * @throws IntegerSetException Throws IntegerSetException if the set is empty
+  	 */
 	public int largest() throws IntegerSetException
 	{
 		int max = 0;
@@ -116,10 +113,9 @@ public class IntegerSet {
 	}; 
 
 	/**
-	 * 
-	 * @return min: smallest item in the set 
-	 * @throws IntegerSetException: if the set is empty
-	 * 
+	 * Returns the smallest item in the set
+	 * @return min smallest item in the set 
+	 * @throws IntegerSetException If the set is empty
 	 */
 	public int smallest() throws IntegerSetException
 	{
@@ -140,10 +136,8 @@ public class IntegerSet {
 
 
 	/**
-	 * 
-	 * @param intSetb
 	 * Add the elements of from set B into set A without repeating any values
-	 * 
+	 * @param intSetb Second set to perform union operation on
 	 */
 	public void union(IntegerSet intSetb) 
 	{
@@ -157,10 +151,8 @@ public class IntegerSet {
 	
 	
 	/**
-	 * 
-	 * @param intSetb
 	 * Find the common values in the set 
-	 * 
+	 * @param intSetb Second set to perform intersection operation on
 	 */
 	public void intersect(IntegerSet intSetb)
 	{
@@ -177,10 +169,8 @@ public class IntegerSet {
 
 	
 	/**
-	 * 
-	 * @param intSetb
 	 * Remove elements present in set B from set A and keep the result in set A
-	 * 
+	 * @param intSetb Second set to perform difference operation on
 	 */
 	public void diff(IntegerSet intSetb)
 	{
@@ -196,9 +186,8 @@ public class IntegerSet {
 
 	
 	/**
-	 * 
+	 * Return true if the set is empty, false otherwise
 	 * @return true if the set is empty, false otherwise
-	 * 
 	 */
 	public boolean isEmpty()
 	{
@@ -215,13 +204,7 @@ public class IntegerSet {
 	};
 
 	
-	/**
-	 * 
-	 * @param index
-	 * Get the index of a value in the array list
-	 * 
-	 */
-	public int get(int index)
+	private int get(int index)
 	{
 		return set.get(index);
 	};
@@ -229,7 +212,6 @@ public class IntegerSet {
 	
 	/**
 	 * Print out the values of the array list
-	 * 
 	 */
  	public void print()
  	{
