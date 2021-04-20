@@ -15,7 +15,6 @@ public class Driver {
 		System.out.println( db.getGenreOfSong("Always There"));// prints “Jazz”
 		System.out.println(songs); //prints "[Savage, Gin and Juice]"
 
-
 	}
 
 }
